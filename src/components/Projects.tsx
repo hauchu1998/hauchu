@@ -88,7 +88,7 @@ function ProjectModal(props: ModalProps) {
         >
             <button className="absolute top-3 right-2 z-30 text-xl md:text-3xl font-bold text-gray-400" onClick={() => props.setShow(false)}><AiOutlineClose /></button>
             <div className="flex flex-col">
-                <div className="relative w-full flex justify-center border-r border-gray-600">
+                <div className="relative w-full flex justify-center">
                     <img src={project.images[index]} className="object-cover" alt="project images" />
                     <button className="absolute -left-8 top-1/2 text-gray-400 text-xl md:text-3xl" onClick={handlePrevClick}><AiOutlineLeft /></button>
                     <button className="absolute -right-8 top-1/2 text-gray-400 text-xl md:text-3xl" onClick={handleNextClick}><AiOutlineRight /></button>
