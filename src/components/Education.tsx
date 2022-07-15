@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import schools from '../assets/schools.json';
 import { MdExpandMore, MdExpandLess } from 'react-icons/md'
 
-interface EducationProps {
-
-}
-
 interface SchoolInfo {
     name: string,
     major: string,
@@ -24,21 +20,21 @@ function School(props: SchoolProps) {
     const school = props.school;
     const [show, setShow] = useState<boolean>(false);
     return (
-        <li className="relative border-l-2 border-gray-600 py-5">
+        <li className="relative border-l-2 border-gray-600 py-5 text-left">
             <div className="absolute mt-[0.425rem] w-3 h-3 bg-gray-600 rounded-full -left-[0.425rem] ring-2 ring-offset-2 ring-gray-600"></div>
             <div className="pl-10 ">
-                <div className="flex justify-between items-center align-baseline">
-                    <p className="text-lg font-semibold">{school.name}</p>
-                    <p className="text-sm italic">{school.location}</p>
+                <div className="flex justify-between items-center align-baseline gap-3 ">
+                    <p className="text-sm md:text-lg font-semibold">{school.name}</p>
+                    <p className="text-[0.6rem] md:text-sm italic">{school.location}</p>
                 </div>
-                <div className="flex justify-between text-sm italic text-gray-600">
+                <div className="flex justify-between text-left text-[0.6rem] md:text-sm italic text-gray-600 gap-3">
                     <p>{school.major}</p>
                     <p>{school.duration}</p>
                 </div>
-                <div className="mt-4 text-left text-sm text-gray-600">
+                <div className="mt-4 text-left text-xs md:text-sm text-gray-600">
                     GPA: {school.GPA}
                 </div>
-                <div className={`${school.descriptions.length > 0 ? "block" : "hidden"} mt-4 text-sm text-gray-600`}>
+                <div className={`${school.descriptions.length > 0 ? "block" : "hidden"} mt-4 text-xs md:text-sm text-gray-600`}>
                     <div className={`${show ? "block" : "hidden"} flex flex-col items-start`}>
                         <ul className="list-disc">
                             {
@@ -52,7 +48,7 @@ function School(props: SchoolProps) {
                         </div>
                     </div>
                 </div>
-                <div className={`${school.descriptions.length > 0 ? "block" : "hidden"} flex justify-end text-sm`}>
+                <div className={`${school.descriptions.length > 0 ? "block" : "hidden"} flex justify-end text-xs md:text-sm`}>
                     <button className={`${show ? "hidden" : "block"} flex items-center gap-1 hover:underline`} onClick={() => setShow(true)}>
                         <span className="text-base"><MdExpandMore /></span> 
                         <span>view more</span>
@@ -70,8 +66,8 @@ function School(props: SchoolProps) {
 export default function Education() {
     return (
         <div id="edu" className="w-full bg-white flex flex-col justify-center items-center">
-            <p className="mt-8 w-full font-bold text-3xl text-center underline underline-offset-2">EDUCATION</p>
-            <div className="mt-5 w-3/5">
+            <p className="mt-8 w-full font-bold text-xl md:text-3xl text-center underline underline-offset-2">EDUCATION</p>
+            <div className="mt-5 w-full md:w-4/5 lg:w-3/5 px-8 md:px-0">
                 <ul className="w-full">
                     {schools.map(school => {
                         return <School key={school.name} school={school} />

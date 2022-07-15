@@ -3,8 +3,8 @@ import React from 'react';
 export default function Skills() {
     return (
         <div id="skills" className="w-full bg-neutral-300 flex flex-col justify-center items-center">
-            <p className="mt-8 w-full font-bold text-3xl text-center underline underline-offset-2">Skills</p>
-            <div className="mt-10 w-3/4 grid grid-cols-3 justify-center gap-3">
+            <p className="mt-8 w-full font-bold text-xl md:text-3xl text-center underline underline-offset-2">Skills</p>
+            <div className="mt-10 w-full lg:w-3/4 px-10 lg:px-0 grid grid-cols-1 md:grid-cols-3 justify-center gap-5 lg:gap-3">
                 <div className='border border-black h-full px-10 py-5'>
                     <p className='font-bold italic text-lg'>Full Stack</p>
                     <div>
