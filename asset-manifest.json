@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hauchu/static/css/main.db806c5c.css",
-    "main.js": "/hauchu/static/js/main.6d08e958.js",
+    "main.css": "/hauchu/static/css/main.4ff2a948.css",
+    "main.js": "/hauchu/static/js/main.f016fb6a.js",
     "static/js/787.27f51f7d.chunk.js": "/hauchu/static/js/787.27f51f7d.chunk.js",
     "static/media/CVPR-W.png": "/hauchu/static/media/CVPR-W.16045e0347bd33424b8f.png",
     "static/media/myprofilepic.jpg": "/hauchu/static/media/myprofilepic.079a8ad57ffc9b9585b1.jpg",
     "static/media/resume.pdf": "/hauchu/static/media/resume.0081b698917ccc75e55e.pdf",
     "index.html": "/hauchu/index.html",
-    "main.db806c5c.css.map": "/hauchu/static/css/main.db806c5c.css.map",
-    "main.6d08e958.js.map": "/hauchu/static/js/main.6d08e958.js.map",
+    "main.4ff2a948.css.map": "/hauchu/static/css/main.4ff2a948.css.map",
+    "main.f016fb6a.js.map": "/hauchu/static/js/main.f016fb6a.js.map",
     "787.27f51f7d.chunk.js.map": "/hauchu/static/js/787.27f51f7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db806c5c.css",
-    "static/js/main.6d08e958.js"
+    "static/css/main.4ff2a948.css",
+    "static/js/main.f016fb6a.js"
   ]
 }
