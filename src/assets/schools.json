@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Cornell Tech at Cornell University",
+        "major": "Jacobs Technion-Cornell Dual M.S. in Information Science",
+        "location": "New York, NY",
+        "duration": "Aug 2022 - Jan 2024",
+        "GPA": "to be continued",
+        "descriptions": [
+
+        ],
+        "advisor": ""
+    },
+    {
+        "name": "National Taiwan University of Science and Technology",
+        "major": "B.S. in Computer Science and Information Engineering",
+        "location": "Taipei, Taiwan",
+        "duration": "Sep 2016 - Jan 2020",
+        "GPA": "3.76 / 4.30 (Overall), 3.83 / 4.30 (Major)",
+        "descriptions": [
+            "Joined Graphics Animation Multimedia Edutainment Lab(GAMELab) as an undergraduate researcher since 2018.",
+            "Mainly conducted research on computer graphics and computer vision"
+        ],
+        "advisor": "Prof. Wen-Kai Tai"
+    }
+]

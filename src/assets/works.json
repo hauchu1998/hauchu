@@ -1,0 +1,62 @@
+[
+    {
+        "company": "BAVE BlockChain Technology Company",
+        "link": "https://letwinwins.com/",
+        "title": "Front-End Engineer",
+        "location": "Taipei, Taiwan",
+        "duration": "Apr 2022 - Jun 2022",
+        "descriptions": [
+            "Managed Web3.0 Dapp development from slicing layout (mostly in React and Tailwindcss), developing APIs to front-end back-end integration.",
+            "Optimized cross-browser and multi-device compatibility.",
+            "Designed framework to interact with EVM smart contracts with Metamask API and Ethers.js",
+            "Conducted traning for clients on querying and managing blockchain data.",
+            "Programmed NFT smart contracts in Solidity."
+        ]
+    },
+    {
+        "company": "National Taiwan University (NTU)",
+        "link": "https://www.csie.ntu.edu.tw/",
+        "title": "Research Associate",
+        "location": "Taipei, Taiwan",
+        "duration": "Jan 2021 - Aug 2021",
+        "descriptions": [
+            "Investigated a novel neural architecture that uses Transformer as U-Net encoder to solve the CNN's limitations in explicitly modeling long-range dependency.",
+            "Developed an algorithm on the basis of YOLOv5 with 500 patients' cricothyroid membrane data to perform realtime instance detection, which achieves 89% accuracy with 25 fps."
+        ],
+        "advisor": "Prof Chu-Song Chen"
+    },
+    {
+        "company": "3D Computer Vision and Deep Learning Applications Course",
+        "title": "Teaching Assistant",
+        "location": "CSIE, NTU",
+        "duration": "Mar 2021 - Jun 2021",
+        "descriptions": [
+            "Graduate-level class of 50+ students",
+            "Gave lectures on the applications of deep learning in 3D computer vision.",
+            "Prepared tutorials, course materials, and assignments for the classes, e.g. deep local feature, optical flow, visual odometry, human pose."
+        ]
+    },
+    {
+        "company": "Computer Science and Information Technology Course",
+        "title": "Teaching Assistant",
+        "location": "CSIR, NTU",
+        "duration": "Nov 2020 - Dec 2020",
+        "descriptions": [
+            "Undergraduate-level class of 100+ students",
+            "Gave sophomores two lectures on the process of Simultaneously Localization and Mapping (SLAM) and an intro to the development of traditional computer vision in deep learning."
+        ]
+    },
+    {
+        "company": "Academia Sinica",
+        "link": "https://www.iis.sinica.edu.tw/en/index.html",
+        "title": "Research Assistant",
+        "location": "Taipei, Taiwan",
+        "duration": "Aug 2020 - Dec 2020",
+        "descriptions": [
+            "Developed frameworks for multi-view multi-human 3D pose estimation and tracking utilizing key-point detection model and geometric computer vision",
+            "Built a fine-grained items retrieval prototype aimed at retrieving similar product images based on user's preference.",
+            "Investigated into Knowledge Distillation and Backward Compatible Training for fine-grained image retrieval inincremental setting."
+        ],
+        "advisor": "Prof Chu-Song Chen"
+    }
+]
