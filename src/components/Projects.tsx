@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from "react";
+import React, { useState, useReducer, useEffect } from "react";
 import projects from '../assets/projects.json';
 import { RiGlobalLine } from 'react-icons/ri';
 import { BsGithub } from 'react-icons/bs';
@@ -19,6 +19,7 @@ interface ProjectInfo {
 
 interface ModalProps {
     project: ProjectInfo,
+    show: boolean,
     setShow: Function,
 }
 
@@ -59,7 +60,7 @@ function reducer(state: SelectedProjects, action: Action) {
 
 function ProjectModal(props: ModalProps) {
     const project = props.project;
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState<number>(0);
 
     const getToolsString = () => {
         var tools = project.tools[0];
@@ -70,16 +71,18 @@ function ProjectModal(props: ModalProps) {
     }
 
     const handleNextClick = () => {
-        if (index < project.images.length - 1) {
-            setIndex(prev => prev + 1);
-        }
+        var tempIndex = (index + 1) % project.images.length;
+        setIndex(tempIndex < 0? tempIndex + project.images.length: tempIndex);
     }
 
     const handlePrevClick = () => {
-        if (index > 0) {
-            setIndex(prev => prev - 1);
-        }
+        var tempIndex = (index - 1) % project.images.length;
+        setIndex(tempIndex < 0? tempIndex + project.images.length: tempIndex);
     }
+
+    useEffect(() => {
+        setIndex(0);
+    }, [props.show])
 
     return (
         <div
@@ -213,7 +216,7 @@ export default function Projects() {
                 }
             </div>
             <div className={`${show ? "block" : "hidden"} fixed w-full h-screen bg-black bg-opacity-70 modal-backdrop z-50`} onClick={() => setShow(false)}>
-                <ProjectModal project={state.projects[index]} setShow={setShow} />
+                <ProjectModal project={state.projects[index]} show={show} setShow={setShow} />
             </div>
             <div className="w-full h-[50px]"></div>
         </div>
