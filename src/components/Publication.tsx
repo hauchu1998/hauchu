@@ -7,7 +7,7 @@ export default function Publication() {
     return (
         <div id="publish" className='w-full flex flex-col justify-center items-center'>
             <p className="mt-8 w-full font-bold text-xl md:text-3xl text-center underline underline-offset-2">PUBLICATION</p>
-            <div className="mt-8 w-3/5">
+            <div className="mt-8 w-4/5 lg:w-3/5">
                 <ul className="w-full">
                     <li className='w-full grid grid-cols-1 md:grid-cols-3 gap-y-3 md:gap-8 items-center'>
                         <div className='w-full justify-center'>

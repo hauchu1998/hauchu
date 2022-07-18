@@ -24,12 +24,12 @@ export default function Intro(props: IntroProps) {
                 </p>
 
                 <div className="w-4/5 border-b-2 border-gray-600"></div>
-                <div className="grid grid-cols-7 gap-3 md:gap-8 text-2xl md:text-3xl lg:text-4xl text-white">
+                <div className="grid grid-cols-5 gap-3 md:gap-8 text-2xl md:text-3xl lg:text-4xl text-white">
                     <a href="https://www.facebook.com/hellodehong/" className="transition duration-150 ease-in-out hover:scale-125"><FaFacebookSquare /></a>
                     <a href="https://www.instagram.com/hauzzz___/" className="transition duration-150 ease-in-out hover:scale-125"><BsInstagram /></a>
-                    <a href="" className="transition duration-150 ease-in-out hover:scale-125"><BsTwitter /></a>
-                    <a href="" className="transition duration-150 ease-in-out hover:scale-125"><FaLinkedin /></a>
-                    <a href="" className="transition duration-150 ease-in-out hover:scale-125"><BsSkype /></a>
+                    {/* <a href="" className="transition duration-150 ease-in-out hover:scale-125"><BsTwitter /></a> */}
+                    <a href="https://www.linkedin.com/in/hauchu1998/" className="transition duration-150 ease-in-out hover:scale-125"><FaLinkedin /></a>
+                    {/* <a href="" className="transition duration-150 ease-in-out hover:scale-125"><BsSkype /></a> */}
                     <a href="https://github.com/hauchu1998" className="transition duration-150 ease-in-out hover:scale-125"><BsGithub /></a>
                     <a href="https://gitlab.com/hauchu1998" className="transition duration-150 ease-in-out hover:scale-125"><FaGitlab /></a>
                 </div>
